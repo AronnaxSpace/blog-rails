@@ -185,6 +185,11 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+aronnax-styles@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/aronnax-styles/-/aronnax-styles-0.3.0.tgz#e327c72446b2f8e35d4425b185ae74a64c60dd31"
+  integrity sha512-q4z4RgRXWv73lKO/P3SakitUu31treMfNzTTSvfsTiiI4+cJFQRJKSv4Kfy4CnYZKaMidsAwpxM5eSnZTp25eA==
+
 autoprefixer@^10.4.21:
   version "10.4.21"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.21.tgz#77189468e7a8ad1d9a37fbc08efc9f480cf0a95d"
