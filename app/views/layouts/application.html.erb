@@ -23,6 +23,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <div class="card mt-4">
+        <button class="btn btn-primary" onclick="toggleMode()">
+          Toggle Mode
+        </button>
+        <%= link_to "New post", new_post_path, class: "btn btn-primary" %>
+      </div>
+      <main class="my-4">
+        <%= yield %>
+      </main>
+    </div>
   </body>
 </html>

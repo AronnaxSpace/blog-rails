@@ -99,6 +99,7 @@ GEM
     erubi (1.13.1)
     et-orbi (1.4.0)
       tzinfo
+    ffaker (2.25.0)
     fugit (1.11.2)
       et-orbi (~> 1, >= 1.2.11)
       raabro (~> 1.4)
@@ -344,6 +345,7 @@ DEPENDENCIES
   brakeman
   cssbundling-rails
   debug
+  ffaker
   jbuilder
   jsbundling-rails
   kamal

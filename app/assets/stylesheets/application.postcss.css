@@ -1,3 +1,7 @@
 /* Entry point for your PostCSS build */
 
 @import "aronnax-styles/dist/aronnax-styles.min.css";
+
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+}
