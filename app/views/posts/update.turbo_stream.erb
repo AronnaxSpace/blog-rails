@@ -1,0 +1,6 @@
+<% if post.errors.any? %>
+  <%= turbo_stream.replace "post_form", partial: "posts/form" %>
+<% else %>
+  <%= turbo_stream.replace dom_id(post), partial: "posts/post" %>
+  <%= close_modal %>
+<% end %>

@@ -22,17 +22,15 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
   </head>
 
-  <body>
+  <body data-controller="modal">
     <div class="container">
-      <div class="card mt-4">
-        <button class="btn btn-primary" onclick="toggleMode()">
-          Toggle Mode
-        </button>
-        <%= link_to "New post", new_post_path, class: "btn btn-primary" %>
-      </div>
+      <%= render "layouts/partials/header" %>
       <main class="my-4">
         <%= yield %>
       </main>
     </div>
+
+    <%= render "shared/modal_toggle" %>
+    <%= render "shared/modal" %>
   </body>
 </html>
