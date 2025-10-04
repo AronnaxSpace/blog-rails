@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!, except: [ :index, :show ]
+
   helper_method :post
 
   def index
