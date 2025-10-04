@@ -1,10 +1,15 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @post %>
+<%= render post %>
 
 <div>
-  <%= link_to "Edit this post", edit_post_path(@post) %> |
-  <%= link_to "Back to posts", posts_path %>
+  <%= link_to "Edit this post",
+              edit_post_path(post),
+              class: "btn btn-primary",
+              data: {
+                turbo_frame: "modal_content",
+                action: "modal#open"
+              } %>
 
-  <%= button_to "Destroy this post", @post, method: :delete, class: "btn btn-danger" %>
+  <%= button_to "Destroy this post", post, method: :delete, class: "btn btn-danger" %>
 </div>
